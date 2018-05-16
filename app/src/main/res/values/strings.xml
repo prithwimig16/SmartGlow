@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyApplication</string>
+    <string name="title_home">Home</string>
+    <string name="lbl_scan">Click Here To Scan the devices</string>
+    <string name="lbl_auto_connect">Auto Connect</string>
+    <string name="lbl_light_operation">Light Operation</string>
+</resources>
