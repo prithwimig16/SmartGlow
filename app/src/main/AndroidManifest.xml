@@ -29,7 +29,8 @@
 
         <activity android:name=".BlueTooth.BlueToothActivity" />
         <activity android:name=".SearchDevices.SearchDevicesActivity" />
-        <activity android:name=".DeviceFound.DeviceFoundActivity"></activity>
+        <activity android:name=".DeviceFound.DeviceFoundActivity" />
+        <activity android:name=".WelcomeHome.WelcomeHomeActivity"></activity>
     </application>
 
 </manifest>
