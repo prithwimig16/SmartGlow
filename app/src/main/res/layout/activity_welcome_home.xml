@@ -46,27 +46,39 @@
                android:text="Edit" />
 
            <RelativeLayout
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:layout_alignParentRight="true"
-               android:layout_marginTop="10dp"
-               android:background="@drawable/ic_rectangle_11"/>
-
-           <ImageView
                android:layout_width="100dp"
                android:layout_height="40dp"
-               android:layout_marginTop="15dp"
                android:layout_alignParentRight="true"
-               android:layout_centerHorizontal="true"
-               android:src="@drawable/icon_power_on"/>
+               android:layout_marginTop="10dp"
+               android:background="@drawable/ic_rectangle_11">
+
+               <ImageView
+                   android:layout_width="50dp"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentEnd="true"
+                   android:layout_marginTop="20dp"
+                   android:layout_centerVertical="true"
+                   android:layout_marginEnd="30dp"
+                   android:background="#3b7cff"
+                   android:src="@drawable/icon_power_on" />
+
+           </RelativeLayout>
+
+
        </RelativeLayout>
 
     </android.support.v7.widget.Toolbar>
 
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:layout_below="@+id/toolbar">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/toolbar"
         android:layout_marginTop="10dp"
         android:padding="10dp"
         android:id="@+id/relative1">
@@ -102,6 +114,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="112dp"
+        android:id="@+id/rel_"
         android:layout_below="@+id/relative1"
         android:layout_centerHorizontal="true"
         android:background="#ffffff"
@@ -146,18 +159,28 @@
             android:lineSpacingExtra="9sp"
             android:text="Bulb 1" />
 
-        <SeekBar
-            android:layout_width="200dp"
-            android:layout_height="5dp"
-            android:progressDrawable="@drawable/progress"
-            android:thumb="@drawable/thumb"
-            android:layout_marginStart="10dp"
+
+
+        <io.techery.properratingbar.ProperRatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:prb_defaultRating="0"
+            app:prb_symbolicTick="|"
+            android:layout_marginLeft="10dp"
             android:layout_toRightOf="@+id/tv_bulb_name"
-            android:layout_marginTop="50dp"/>
+            android:layout_marginTop="35dp"
+            app:prb_symbolicTickNormalColor="@android:color/darker_gray"
+            app:prb_symbolicTickSelectedColor="@android:color/holo_green_dark"
+            app:prb_totalTicks="50"
+            />
+
+
 
 
     </RelativeLayout>
 
-
+    </RelativeLayout>
 
 </RelativeLayout>
